@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Innovarium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5; /* Colore di sfondo generale */
+        }
+
+        .miur-bar {
+            background-color: #004080; /* Colore barra in alto */
+            color: #ffffff;
+            padding: 10px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .miur-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .miur-bar a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #005c99; /* Colore header */
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #004080; /* Colore footer */
+            color: #ffffff;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        #logo {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        /* Stili per rendere la tabella responsive */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ffffff;
+            padding: 10px;
+        }
+
+        td img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        td h1 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        td p {
+            margin-bottom: 10px;
+        }
+
+        td li {
+            margin-top: 10px;
+        }
+
+        /* Stili per i link nel contenuto */
+        content a {
+            color: #0073b7; /* Colore link */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        content a:hover {
+            text-decoration: underline;
+        }
+
+        #aggiorna {
+            font-size: 24px;
+            cursor: pointer;
+            color: #0073b7;
+            transition: 0.2s;
+        }
+
+        #aggiorna:hover {
+            color: #005797;
+        }
+    </style>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="miur-bar">
+    <div>
+        <a href="https://github.com/GabbyStudiosDev" target="_blank">By Gabby Studios</a>
+    </div>
+    <div>
+        <a href="https://gabbystudios.github.io/Pagina-Globale/" target="_blank">Pagina Globale</a>
+    </div>
+</div>
+
+
+
+
+    
+<header>
+    <div class="container">
+        <h1>
+            <img id="logo" src="https://dev-innovarium.pantheonsite.io/wp-content/uploads/2024/03/cropped-Innovarium-removebg-preview-1.png" alt="Logo GabbyCentral">
+            Innovarium
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        About
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>About</strong> Innovarium è la piattaforma che distribuisce risorse web per l'istruzione, con Innovarium si vuole insegnare le basi dell'HTML & CSS.
+      </div>
+    </div>
+  </div>
+
+
+
+    
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Site Model
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+
+
+    
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        How Use
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<footer>
+    <div class="container">
+        <div>
+            <img id="logo" src="https://gabrielsystem.altervista.org/wp-content/uploads/2024/03/icona-1.png" alt="Logo GabbyCentral">
+            <h1>Gabriel Jones</h1>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024 Gabriel Jones. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
